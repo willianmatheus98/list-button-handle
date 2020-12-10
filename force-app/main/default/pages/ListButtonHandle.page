@@ -1,0 +1,9 @@
+<apex:page lightningStylesheets="true" extensions="ListButtonHandleController" standardController="Account" recordSetVar="accounts">
+
+    <!-- the selected items -->
+    <apex:pageBlock title="Selected Items">
+        <apex:pageBlockTable value="{!acctsSelected}" var="acct">
+            <apex:column value="{!acct.Id}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
